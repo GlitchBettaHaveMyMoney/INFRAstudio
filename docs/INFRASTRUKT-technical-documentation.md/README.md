@@ -1,15 +1,34 @@
+---
+cover: .gitbook/assets/Untitled design.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # INFRASTRUKT Technical Documentation
 
 ## Table of Contents
 
-1. [Architecture Overview](#architecture-overview)
-2. [Core Components](#core-components)
-3. [Chain Configuration](#chain-configuration)
-4. [Execution Environments](#execution-environments)
-5. [Cross-Chain Communication](#cross-chain-communication)
-6. [Security Model](#security-model)
-7. [SDK Reference](#sdk-reference)
-8. [Advanced Topics](#advanced-topics)
+1. [Architecture Overview](./#architecture-overview)
+2. [Core Components](./#core-components)
+3. [Chain Configuration](./#chain-configuration)
+4. [Execution Environments](./#execution-environments)
+5. [Cross-Chain Communication](./#cross-chain-communication)
+6. [Security Model](./#security-model)
+7. [SDK Reference](./#sdk-reference)
+8. [Advanced Topics](./#advanced-topics)
 
 ## Architecture Overview
 
@@ -41,9 +60,9 @@ graph TD
 
 The INFRASTRUKT architecture facilitates seamless interaction between components through a standardized messaging protocol. This enables:
 
-- Dynamic component replacement without system downtime
-- Cross-layer optimization opportunities
-- Unified monitoring and debugging interfaces
+* Dynamic component replacement without system downtime
+* Cross-layer optimization opportunities
+* Unified monitoring and debugging interfaces
 
 ## Core Components
 
@@ -53,12 +72,12 @@ The Chain Manager is the central orchestration component responsible for coordin
 
 Key responsibilities include:
 
-- Chain lifecycle management
-- Configuration validation
-- State synchronization
-- Resource allocation
-- Performance monitoring
-- Fault detection and recovery
+* Chain lifecycle management
+* Configuration validation
+* State synchronization
+* Resource allocation
+* Performance monitoring
+* Fault detection and recovery
 
 ```typescript
 interface ChainStatus {
@@ -263,6 +282,7 @@ INFRASTRUKT's ZK rollup implementation leverages cutting-edge zero-knowledge pro
 Key components:
 
 1. **Proof Generation Pipeline**
+
 ```typescript
 interface ProofGenerationConfig {
   scheme: 'PLONK' | 'Groth16';
@@ -296,6 +316,7 @@ class ProofGenerator {
 ```
 
 2. **Circuit Optimization**
+
 ```typescript
 class CircuitOptimizer {
   private constraints: Constraint[];
@@ -454,6 +475,7 @@ class AtomicTransactionCoordinator {
 INFRASTRUKT's security model is built on a comprehensive threat modeling approach that addresses various attack vectors:
 
 1. **Validator Collusion**
+
 ```typescript
 class ValidatorSet {
   private validators: Map<string, Validator>;
@@ -473,6 +495,7 @@ class ValidatorSet {
 ```
 
 2. **Network Partitions**
+
 ```typescript
 class PartitionHandler {
   private readonly timeoutMs: number;
@@ -727,25 +750,22 @@ class MetricsCollector {
 Planned features and improvements:
 
 1. **Layer 3 Support**
-   - Native support for L3 chains
-   - Recursive rollup capabilities
-   - Enhanced scalability through layered architecture
-
+   * Native support for L3 chains
+   * Recursive rollup capabilities
+   * Enhanced scalability through layered architecture
 2. **Advanced Privacy Features**
-   - Zero-knowledge identity and compliance
-   - Enhanced transaction privacy
-   - Regulatory compliance frameworks
-
+   * Zero-knowledge identity and compliance
+   * Enhanced transaction privacy
+   * Regulatory compliance frameworks
 3. **Cross-chain DEX Integration**
-   - Built-in liquidity aggregation
-   - Atomic cross-chain swaps
-   - Unified liquidity pools
-
+   * Built-in liquidity aggregation
+   * Atomic cross-chain swaps
+   * Unified liquidity pools
 4. **AI-Powered Optimization**
-   - Automatic parameter tuning
-   - Predictive scaling
-   - Anomaly detection
+   * Automatic parameter tuning
+   * Predictive scaling
+   * Anomaly detection
 
----
+***
 
 This documentation is maintained by the INFRASTRUKT team and INFRA Labs and is regularly updated to reflect the latest features and best practices.
